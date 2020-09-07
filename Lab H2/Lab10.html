@@ -1,0 +1,24 @@
+<html lang="nl">
+    <head>
+        <meta hhtp-equiv="Content-Type" content="text/html";
+        charset="UTF-8">
+        <title>Lab 10</title>
+        <script src="mijnfunctions.js"></script>
+    </head>
+
+    <body>
+        <form name="convert">
+                    <input required type="text" id="hoeveelheid" name="hoeveelheid" placeholder="Hoeveelheid">
+                    <select required name="koers" id="koers">
+                        <option value="doeu">dollar/euro</option>
+                        <option value="eudo">euro/dollar</option>
+                        <option value="rueu">ruble/euro</option>
+                        <option value="euru">euro/ruble</option>
+                    </select>
+                    <button onclick="Convert(document.getElementById('hoeveelheid').value, document.getElementById('koers').value)">Converteren</button>
+        </form>
+        
+        <script>
+        </script>
+    </body>
+</html>

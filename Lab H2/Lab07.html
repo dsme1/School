@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta http-equiv="Content-Type"
+                     content="text/html;
+                     charset=UTF-8">
+    <title>Lab 07</title>
+</head>
+<body>
+    <H2>Lab 07</H2>
+    <h3>Factuur</h3>
+    <script>
+        //Declaratie van gebruikte variabelen
+        var klantnaam = prompt("voer uw eigen naam in");
+        var aantal = parseInt(prompt("aantal boeken te bestellen?"));
+        var woonplaats = prompt("voer de naam van uw woonplaats in");
+        var postcode = prompt("voer uw postcode in")
+        var titel = "Javascript";
+        var prijs = 29.90;
+        var bezorgkosten = 15;
+        var bedrag;
+        var btw;
+        var totaal;
+        var factuurDatum = Date.now();
+        var dag = 86400000;
+        
+        //berekeningen van bedragen die gebruikt worden en weergegeven worden aan de klant
+        vijfDagen = dag * 5;
+        betaalDatum = factuurDatum + vijfDagen;
+        bedrag = aantal * prijs;
+        btw = bedrag * 0.06;
+        totaal = bedrag + btw;
+
+        //omzetting van Date objecten naar leesbare datums
+        betaalDatum = new Date(betaalDatum);
+        factuurDatum = new Date(factuurDatum);
+
+        //Date methodes om specifieke data te isoleren en te gebruiken voor weergave aan de klant
+        jaarBetaal = betaalDatum.getFullYear();
+        maandBetaal = betaalDatum.getMonth();
+        dagBetaal = betaalDatum.getDate();
+
+        jaarFactuur = factuurDatum.getFullYear();
+        maandFactuur = factuurDatum.getMonth();
+        dagFactuur = factuurDatum.getDate();
+
+        //isoleert de cijfers van de postcode string die ingevoerd wordt door de klant en zet het om naar integers
+        postcodeNumStr = postcode.substr(0, 4);
+        postcodeNumInt = parseInt(postcodeNumStr);
+
+        //zet de string van woonplaats om naar kleine letters
+        woonplaats = woonplaats.toLowerCase();
+
+        //bekijkt of de klant in amsterdam woont voor de bezorgkosten
+        if (woonplaats == "amsterdam" && postcodeNumInt >= 1000 && postcodeNumInt <= 2000){
+            window.alert("U betaald geen bezorgkosten!");
+            bezorgkosten = 0;
+        }
+
+        totaal = totaal + bezorgkosten;
+
+        //wat de klant te zien krijgt na invoeren van data
+        document.write("<br>Factuurdatum: " + jaarBetaal + "-" + maandBetaal + "-" + dagBetaal);
+        document.write("<br>Betaaldatum: " + jaarFactuur + "-" + maandFactuur + "-" + dagFactuur);
+        document.write("<br>Bedankt voor je bestelling: " + klantnaam);
+        document.write("<br>Boektitel is: " + titel);
+        document.write("<br>Aantal te bestellen is: " + aantal);
+        document.write("<br>Prijs per boek is: " + prijs.toFixed(2));
+        document.write("<br>Bedrag is: " + bedrag.toFixed(2));
+        document.write("<br>BTW is: " + btw.toFixed(2));
+        document.write("<br>Bezorgkosten: " + bezorgkosten);
+        document.write("<br>Totaal inclusief BTW en bezorgkosten is: " + totaal.toFixed(2));
+    </script>
+</body>
+</html>

@@ -1,0 +1,672 @@
+/* General statements */
+
+/* Troubleshooting Borders 
+div 
+{
+    border: 3px solid #4CAF50;
+    overflow: auto;    
+}     */
+
+body, html
+{
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/osdorplucht.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.container::-webkit-scrollbar 
+{ 
+    width: 0
+}
+
+/* Textbox */
+.text-container
+{
+    z-index: 97;
+    position: relative;
+    top: -8%;
+    margin: auto;
+    width: 1200px;
+    background-color: white;
+    height: auto;
+}
+
+.text
+{
+    z-index: 99;
+    position: relative;
+    margin: auto;
+    padding-bottom: 45px;
+    background-color: white;
+    width: 750px;
+    height: 100%;
+}
+
+.text-footer
+{
+    position: relative;
+    margin: auto;
+    top: -15%;
+    width: 1200px;
+    height: 150px;
+    background-color: #D9121A;
+}
+
+.text h1
+{
+    padding-top: 50px;
+    position: relative;
+    letter-spacing: .02em;
+    font-size: 2.7em;
+    text-align: center;
+    font-weight: 600;
+    
+}
+
+.text h2
+{
+    position: relative;
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
+.text p
+{
+    text-align: justify;
+    font-size: 1.2em;
+    position: relative;
+    margin-bottom: 20px;
+    word-spacing: .2em;
+    line-height: 1.4em;
+}
+
+.personeeltext
+{
+    margin-top: 13px;
+    margin-bottom: 13px;
+    width: 485px;
+    display: inline-block;
+}
+
+.personeeltext h2
+{
+    font-size: 1.7em;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.personeeltext h4
+{
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 0;
+    margin-left: 40px;
+    color: grey;
+}
+
+/* Form in textbox */
+
+.row
+{
+    margin-bottom: 75px;
+}
+.contactform .input
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.contactform textarea
+{
+    height: 200px;
+    width: 100%;
+}
+
+.contactform label
+{
+    font-size: 1.2em;
+    word-spacing: .2em;
+    line-height: 1.4em;
+}
+
+.submitbtn
+{
+    margin-top: 10px;
+    border: 0px;
+    box-shadow: none;
+    color: white;
+    border-radius: 0px;
+    padding: 11px 11px;
+    font-family: 'Averia Serif Libre';
+    font-size: 1.125em;
+    background-color: #D9121A;
+    transition: 0.1s ease;
+}
+
+.submitbtn:hover
+{
+    background-color: #CA121A;
+    cursor: pointer;
+}
+
+.submitbtn:active {
+    background-color: #CA121A;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+/* Columns in textbox */
+.column 
+{
+    text-align: center;
+    float: left;
+    width: 33.33%;
+}
+.column p
+{
+    text-align: center;
+}
+
+.row:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Images in textbox */
+.overlay-effect-images
+{
+    position: absolute;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    color: white;
+    background-color: rgba(232, 232, 232, 0.3);
+    overflow:hidden;
+    text-align: center;
+    font-size: 1.1em;
+    word-spacing: .2em;
+    line-height: 44px;
+    font-weight: bold;
+}
+
+.text-images:hover .overlay-effect-images
+{
+    opacity: 1;
+}
+
+
+.text-images
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: relative;
+    height: auto;
+    width: auto;
+    display: inline-block;
+}
+
+#piet1
+{
+    height: 200px;
+    width: 300px;
+}
+
+#piet2
+{
+    height: 200px;
+    width: 300px;
+    margin-left: 50%;   
+}
+
+#piet-overlay
+{
+    position: absolute;
+    height: 50px;
+    width: 300px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    color: white;
+    background-color: rgba(232, 232, 232, 0.3);
+    overflow:hidden;
+    text-align: center;
+    font-size: 1.1em;
+    word-spacing: .2em;
+    line-height: 44px;
+    font-weight: bold;
+    margin-left: 50%;
+}
+
+.text-images:hover #piet-overlay
+{
+    opacity: 1;
+}
+
+#wesley
+{
+    width: 400px;
+    height: 200px;
+}
+
+#osdorp
+{
+    height: 605px;
+    width: 750px;
+}
+
+.personeelfoto
+{
+    margin-right: 25px;
+    display: inline-block;
+}
+.personeelfoto img
+{
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+.img-footer
+{
+    font-weight: bold;
+}
+
+/* Metadam Logo */
+.metadamlogo
+{
+    -ms-transform: rotate(270deg); 
+    -webkit-transform: rotate(270deg); 
+    transform: rotate(270deg);
+    position: relative;
+    margin: auto; 
+    margin-bottom: 0;
+    width: 78px;
+    height: 311px;
+    background-image: url(../images/metadam%20logo.png);
+}
+
+/* Footer */
+.footer-intradrek-ref
+{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-intradrek
+{
+    z-index: 99;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 2.5em;
+    background-color: #D9121A;
+}
+
+.footer-intradrek:hover
+{
+    background-color: #CA121A;
+    
+}
+
+/* Navbar */
+.navbar 
+{
+    z-index: 99;
+    width: 1200px;
+    height: 50px;
+    position: relative;
+    margin: auto;
+    top: -7%;
+}
+
+.navbar ul 
+{
+    width: 1200px;
+    list-style-type: none;
+    font-size: 1.4em;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li
+{
+    width: 240px;
+    background-color: white;
+    float: left;
+    border-top: 13px solid #D9121A;
+
+}
+
+.navbar ul li a 
+{
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 63px;
+    padding-right: 64px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.navbar ul li a:hover
+{
+    color: #D9121A;
+    border-bottom: 3px solid black;
+}
+
+/* Homebutton */
+.homebutton
+{
+    z-index: 100;
+    position: absolute;
+    background-image: url(../images/dreklogo.png);
+    top: 0;
+    right: 0;   
+}
+
+.homebutton a
+{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+.homebutton:hover
+{
+    background-image: url(../images/dreklogo2.png);
+}
+
+.metadamlogo a
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Dashboard buttons */
+.panel
+{
+    position: relative;
+    top: 50%;
+    margin: auto;
+    height: 600px;
+    width: 1000px;
+    transform: translatey(-50%);
+}
+
+.overlay-effect
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow:hidden;
+}
+
+.sjonnieknop
+{
+    background-image: url(../images/sjonnie%20home.jpg);
+    background-position: center;
+    position: relative;
+    left: 600px;
+    width: 200px;
+    height: 200px;
+}
+
+.sjonnieknop a
+{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
+
+.sjonnieknop:hover .overlay-effect
+{
+    opacity: 1;
+}
+
+.sjonnieknop:active
+{
+    background-image: url(../images/dreklogo.png), url(../images/sjonnie%20home.jpg);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat; 
+}
+
+.watdoenwij
+{
+    background-image: url(../images/wat%20doen%20wij.jpg);
+    position: relative;
+    left: 800px;
+    top: -200px;
+    width: 200px;
+    height: 200px;
+}
+
+.watdoenwij a
+{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
+
+.watdoenwij:hover .overlay-effect
+{
+    opacity: 1;
+}
+
+.watdoenwij:active
+{
+    background-image: url(../images/dreklogo.png), url(../images/wat%20doen%20wij.jpg);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat; 
+}
+
+.wiezijnwij
+{
+    background-image: url(../images/over%20ons.jpg);
+    position: relative;
+    top: -200px;
+    left: 600px;
+    width: 200px;
+    height: 200px;
+}
+
+.wiezijnwij a
+{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
+
+.wiezijnwij:hover .overlay-effect
+{
+    opacity: 1;
+}
+
+.wiezijnwij:active
+{
+    background-image: url(../images/dreklogo.png), url(../images/over%20ons.jpg);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat; 
+}
+
+.freddieknop
+{
+    background-image: url(../images/freddie%20home.jpg);
+    background-position: center;
+    position: relative;
+    top: -400px;
+    left: 800px;
+    width: 200px;
+    height: 200px;
+    
+}
+
+.freddieknop:active
+{
+    background-image: url(../images/dreklogo.png), url(../images/freddie%20home.jpg);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat; 
+}
+
+.freddieknop a
+{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
+
+.freddieknop:hover .overlay-effect
+{
+    opacity: 1;
+}
+
+.wesleyknop
+{
+    background-image: url(../images/wesley%20drek.jpg);
+    position: relative; 
+    top: -600px;
+    left: 200px;
+    width: 400px;
+    height: 200px;
+}
+
+.wesleyknop a
+{
+    display: inline-block;
+    height: 200px;
+    width: 400px;
+}
+
+.wesleyknop:hover .overlay-effect
+{
+    opacity: 1;
+}
+
+.wesleyknop:active
+{
+    background-image: url(../images/dreklogo.png), url(../images/wesley%20drek.jpg);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat; 
+}
+
+.bedrijf
+{
+    background-image: url(../images/bedrijf.jpg);
+    position: relative;
+    top: -800px;
+    width: 200px;
+    height: 200px;
+}
+
+.bedrijf a
+{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
+
+.bedrijf:hover .overlay-effect
+{
+    opacity: 1;
+}
+
+.bedrijf:active
+{
+    background-image: url(../images/dreklogo.png), url(../images/bedrijf.jpg);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat; 
+}
+
+.contact
+{
+    background-image: url(../images/contact.jpg);
+    position: relative;
+    top: -800px;
+    left: 200px;
+    width: 200px;
+    height: 200px;
+}
+
+.contact a
+{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
+
+.contact:hover .overlay-effect
+{
+    opacity: 1;
+}
+
+.contact:active
+{
+    background-image: url(../images/dreklogo.png), url(../images/contact.jpg);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat; 
+}
+
+.dolffknop
+{
+    background-image: url(../images/dolfff-crop-u1892.jpg);
+    background-position: center;
+    position: relative;
+    top: -1000px;
+    width: 200px;
+    height: 200px;
+    
+}
+
+.dolffknop:active
+{
+    background-image: url(../images/dreklogo.png), url(../images/dolfff-crop-u1892.jpg);
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat; 
+}
+
+.dolffknop a
+{
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+}
+
+.dolffknop:hover .overlay-effect
+{
+    opacity: 1;
+}
+
+    

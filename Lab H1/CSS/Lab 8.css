@@ -1,0 +1,132 @@
+@keyframes revolutie 
+{
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+div
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    opacity: 0.7;
+    text-align: center;
+    font-size: 1.7rem;
+    color: aliceblue;
+}
+
+#een
+{
+    background-color: crimson;
+    z-index: 1;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    
+    -webkit-animation-name: revolutie;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    
+    animation-name: revolutie;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#een2
+{
+    height: 150px;
+    width: 150x;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10px;
+    width: 80%;
+    height: 80%;
+    background-color: aliceblue;
+}
+
+#twee
+{
+    background-color: dodgerblue;
+    z-index: 2;
+    position: relative;
+    bottom: 190px;
+    left: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    
+    -webkit-animation-name: revolutie;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    
+    animation-name: revolutie;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#twee2
+{
+    height: 150px;
+    width: 150x;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10px;
+    width: 80%;
+    height: 80%;
+    background-color: aliceblue;
+}
+
+#drie
+{
+    background-color: forestgreen;
+    z-index: 3;
+    position: relative;
+    bottom: 380px;
+    left: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3%;
+    
+    -webkit-animation-name: revolutie;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    
+    animation-name: revolutie;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#drie2
+{
+    height: 150px;
+    width: 150x;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 10px;
+    width: 80%;
+    height: 80%;
+    background-color: aliceblue;
+}
+
+.verticaal
+{
+    margin: 30px 20px 0 0;
+    transform:              skew(0, -30deg);
+        -ms-transform:      skew(0, -30deg);
+        -moz-transform:     skew(0, -30deg);
+        -o-transform:       skew(0, -30deg);
+        -webkit-transform:  skew(0, -30deg);
+}

@@ -1,0 +1,419 @@
+/* General definitions */ 
+/*) div
+div
+{
+    border: 3px solid #4CAF50;
+    overflow: auto;
+}  */
+
+body, html
+{
+    width: 100%;
+    background-image: url('../images/osdorpbg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.container
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.container::-webkit-scrollbar 
+{ 
+    width: 0
+}
+
+/* Footer */
+.footer-intradrek-ref
+{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-intradrek
+{
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 2.5em;
+    background-color: #D9121A;
+}
+
+.footer-intradrek:hover
+{
+    background-color: #CA121A;
+}
+
+/* Homebutton */
+.homebutton
+{
+    z-index: 100;
+    position: fixed;
+    background-image: url(../images/dreklogo.png);
+    top: 0;
+    right: 0;   
+    float: right;
+}
+
+.homebutton a
+{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+.homebutton:hover
+{
+    background-image: url(../images/dreklogo2.png);
+}
+
+/* Logout button */
+.logged_in_info
+{
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #D9121A;
+    padding-right: 15px;
+}
+.welcome_msg 
+{
+
+    color: white;
+    font-size: 2.3em;
+    font-family: 'Averia Serif Libre';
+    padding: 5px;
+}
+
+.logout
+{
+    border: 1px solid black;
+    box-shadow: none;
+    border-radius: 0px;
+    font-family: 'Averia Serif Libre';
+    font-size: 1.125em;
+    float: right;
+    background-color: white;
+    margin-top: 6px;
+    margin-left: 9px;
+    padding: 3px;
+    transition: .1s ease;
+}
+
+.logout a
+{
+    color: black;
+}
+
+.logout:hover
+{
+    cursor: pointer;
+}
+
+.logout:active
+{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Navbar */
+.navbar 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+	background-color: #D9121A;
+}
+
+.navbar ul 
+{
+    list-style-type: none;
+    float: right;
+}
+
+.navbar ul li {
+    float: left;
+    font-size: 1.5em;
+}
+
+.navbar ul li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 28px;
+    text-decoration: none;
+}
+
+/* Form */
+form h2 
+{
+	text-align: center;
+    color: white;
+	font-family: 'Averia Serif Libre';
+    font-size: 2.25em;
+}
+
+form input 
+{
+	width: 100%;
+	display: block;
+	padding: 13px 13px;
+    margin: 5px auto 10px;
+	font-size: 1em;
+	box-sizing : border-box;
+	border: 1px solid black;
+}
+
+form input:focus 
+{
+	outline: none;
+}
+
+.form-div
+{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding-top: 270px;
+ 
+}
+
+.form
+{    
+    background-color: #D9121A;
+    border: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
+    overflow: auto;
+}
+
+.btn
+{
+    border: 1px solid black;
+    box-shadow: none;
+    border-radius: 0px;
+    padding: 11px 11px;
+    font-family: 'Averia Serif Libre';
+    font-size: 1.125em;
+    float: right;
+    transition: .1s ease;
+    overflow: auto;
+}
+
+.btn:hover
+{
+    cursor: pointer;
+}
+
+.btn:active
+{
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.btn-div
+{
+    display: inline-block;
+    float: right;
+    margin-bottom: 1.66em;
+}
+
+.txt-div
+{
+    text-align: left;
+    display: inline-block;
+    font-family: 'Averia Serif Libre';
+    color: white; 
+    float: left;
+    padding: 3% 0;
+}
+
+/* Content */
+.content
+{
+    margin: auto;
+    position: relative;
+    height: 98%;
+    width: 98.8%;
+}
+
+.content:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.content_title
+{
+    background-color: #D9121A;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+}
+
+/* Post thumbnails */
+.content .post
+{
+    border: 3px solid #4CAF50;
+	width: 335px;
+	margin: 21px;
+	min-height: 320px;
+	float: left;
+	border-radius: 2px;
+	border: 1px solid black;
+	position: relative;
+    background-color: #D9121A;
+    display: inline-block;
+    top: 30%;
+}
+.content .post .category
+{
+	margin-top: 0px;
+	padding: 3px 8px;
+	color: black;
+	background: white;
+	display: inline-block;
+	border-radius: 2px;
+	border: 1px solid #374447;
+	position: absolute;
+	left: 5px; top: 5px;
+	z-index: 3;
+}
+.content .post .category:hover 
+{
+	box-shadow: 0px 2px 2px;
+	color: white;
+	background: #D9121A;
+	transition: .4s;
+	opacity: 1;
+}
+.content .post .post_image 
+{
+    border-bottom: 1px solid black;
+	height: 260px;
+	width: 100%;
+	background-size: 100%;
+}
+
+.content .post .post_info 
+{
+    text-align: center;
+	color: white;
+    padding-bottom: 15px;
+}
+
+.content .post .post_info span 
+{
+    position: absolute;
+	color: #A6A6A6;
+	font-style: italic;
+    bottom: 0;
+}
+
+.content .post .post_info span.span_date
+{
+    left: 3px;
+}
+
+.content .post .post_info span.read_more 
+{
+	right: 3px;
+}
+
+/* Posts */
+.post-wrapper
+{
+    position: absolute;
+    top: 15%;
+    width: 50%;
+    left: 25%;
+}
+
+.full-post-div
+{
+    width: 100%;
+}
+.post-title
+{
+    background-color: #D9121A;
+    position: relative;
+    top: 0;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    font-family: 'Averia Serif Libre';
+    margin: 0;
+}
+
+.post-title h2
+{
+    width: 100%;
+    margin: 0;
+}
+
+.post-body-div
+{
+    position: relative;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    padding-top: 25px;
+}
+
+.post-body-div p
+{
+    font-size: 1.2em;
+    font-family: 'Averia Serif Libre';
+    text-align: center;
+}
+.post-body-div table
+{
+    border-collapse: collapse;
+    border: none;
+    padding: 0;
+}
+
+.post-body-div table p
+{
+    text-align: left;
+    font-family: 'Averia Serif Libre';
+    color: black;
+}
+
+.text-footer
+{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #D9121A;
+    margin-top: 25px;
+}
+
+/* Errors */
+.message-error-validation-errors
+{
+    color: white;
+}
+

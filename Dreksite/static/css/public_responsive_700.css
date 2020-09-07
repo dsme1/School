@@ -1,0 +1,99 @@
+/* 700px devices */
+@media all and (max-width: 700px)
+{
+
+    .navbar 
+    {
+        z-index: 98;
+        max-width: 700px;
+    }
+
+    .navbar ul li
+    {
+        
+        width: 100%;
+        clear: both;
+        max-width: 700px;
+    }
+
+    .navbar ul li a:hover
+    {
+       border-bottom: 3px solid black;
+    }
+    
+    /* Textbox */
+    .text-container
+    {
+        max-width: 700px;
+        
+    }
+
+    .text
+    {
+        max-width: 700px;
+    }
+
+    .text-footer
+    {
+        max-width: 700px;
+    }
+
+    .text h1
+    {
+        padding-top: 390px;
+        max-width: 700px;
+    }
+
+    .text h2
+    {
+        max-width: 700px;
+    }
+
+    .text p
+    {
+        text-align: justify;
+        max-width: 700px;
+ 
+    }
+
+    .text-images
+    {
+        max-width: 700px;
+    }
+
+    #piet2
+    {
+        margin-left: 40px;
+    }
+
+    #piet-overlay
+    {
+        margin-left: 40px;
+    }
+
+    /* Columns in textbox */
+    .column 
+    {
+        text-align: center;
+        float: left;
+        width: 33.33%;
+    }
+    .column p
+    {
+        text-align: center;
+    }
+
+    .row:after
+    {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .maps
+    {
+        width: 100%;
+        max-width: 700px;
+    }
+
+}

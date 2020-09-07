@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta http-equiv="Content-Type"
+                     content="text/html;
+                     charset=UTF-8">
+    <title>Lab 08</title>
+</head>
+<body>
+    <script>
+        //declaratie van gebruikte variabelen
+        var einddatum = prompt('Wat is de factuurdatum JJJJ-MM-DD?');
+        var vandaag = Date.now();
+        var factuurDatum = new Date(einddatum);
+        var dag = 86400000;
+
+        termijn = dag * 30;
+        vandaag = new Date();
+
+        //uitrekenen van de betaaldatum en het omzetten naar een leesbare Date object
+        betaalDatum = factuurDatum.getTime() + termijn;
+        betaalDatum = new Date(betaalDatum)
+
+        document.write(vandaag);
+        document.write("<br>" + factuurDatum);
+        document.write("<br>" + betaalDatum);
+
+        if (vandaag > betaalDatum){
+            document.write("Meld incassobureau");
+        } else {
+            resterende = ((betaalDatum - vandaag) / dag);
+            document.write("U hebt nog nog: " + resterende.toFixed(0) + " dagen te gaan");
+        }
+    </script>
+</body>
+</html>

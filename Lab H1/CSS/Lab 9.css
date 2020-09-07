@@ -1,0 +1,29 @@
+table
+{
+    border: double;
+    background-image: linear-gradient(to bottom, hsl(0, 80%, 50%), #bada55);
+}
+
+thead
+{
+    font-weight: bold;
+}
+
+tfoot
+{
+    margin-left: auto;
+}
+
+tfoot td
+{
+    font-weight: bold;
+    text-align: center;
+    border: none;
+}
+
+td
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    border: double;
+}

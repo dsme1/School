@@ -1,0 +1,23 @@
+<html lang="nl">
+    <head>
+        <meta hhtp-equiv="Content-Type" content="text/html";
+        charset="UTF-8">
+        <title>Lab 13</title>
+        <script src="mijnfunctions.js"></script>
+    </head>
+
+    <body>
+        <script>
+        index = 0
+        string1 = '1,2,3,4,5,6,7,8,9,0#2'
+        string2 = '1,2,3#'
+
+        do 
+        {   
+            if (string1.charAt(index) != '#' && string2.charAt(index) != '#')
+            document.write(string1.charAt(index) + " " +  string2.charAt(index))
+            index++
+        } while (index < 21)    
+        </script>
+    </body>
+</html>

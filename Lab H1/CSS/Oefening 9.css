@@ -1,0 +1,48 @@
+/* Stijlen voor Oefening 8 */
+html{
+    height: 100%;
+    width: 100%;
+    background-color: lightgray;
+    overflow: auto;
+    }
+
+body{
+    border: 1px solid;
+    width: 30%;
+}
+
+#div1{
+    text-align: left;
+    font-weight: bold;
+}
+
+#div2{
+    background-color: #FE0000;
+}
+
+#div3{
+    background-color: #FF9C00;
+}
+
+#div4{
+    background-color: #F5FF00;
+}
+
+#div5{
+    background-color: #3CF10E;
+}
+
+#div6{
+    background-color: #01FFE5;
+}
+
+#div7{
+    background-color: #0024FF;
+}
+
+#div8{
+    background-color: #C500FF;
+}
+
+#div9{
+    background-color: #FF009C;

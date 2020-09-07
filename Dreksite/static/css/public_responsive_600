@@ -1,0 +1,406 @@
+/* 700px devices */
+@media only screen and (max-width: 700px)
+{
+/* General statements */
+
+/* Troubleshooting Borders  
+div 
+{
+    border: 3px solid #4CAF50;
+    overflow: auto;    
+}    */
+
+body
+{
+    max-width: 700px;
+}
+
+.container
+{
+    max-width: 700px;
+}
+
+.container::-webkit-scrollbar 
+{ 
+    width: 0
+}
+
+/* Textbox */
+.text-container
+{
+    max-width: 700px;
+}
+
+.text
+{
+    max-width: 700px;
+}
+
+.text-footer
+{
+    max-width: 700px;
+}
+
+.text h1
+{
+    max-width: 700px;
+    
+}
+
+.text h2
+{
+    max-width: 700px;
+}
+
+.text p
+{
+    max-width: 700px;
+}
+
+.personeeltext
+{
+    max-width: 700px;
+}
+
+.personeeltext h2
+{
+    max-width: 700px;
+}
+
+.personeeltext h4
+{
+    max-width: 700px;
+}
+
+/* Form in textbox */
+
+.row
+{
+    max-width: 700px;
+}
+.contactform .input
+{
+    max-width: 700px;
+}
+
+.contactform textarea
+{
+    max-width: 700px;
+}
+
+.contactform label
+{
+    max-width: 700px;
+}
+
+.submitbtn
+{
+    max-width: 700px;
+}
+
+.submitbtn:hover
+{
+    max-width: 700px;
+}
+
+.submitbtn:active {
+    max-width: 700px;
+}
+
+
+/* Columns in textbox */
+.column 
+{
+    max-width: 700px;
+}
+.column p
+{
+    max-width: 700px;
+}
+
+.row:after
+{
+    max-width: 700px;
+}
+
+/* Images in textbox */
+.overlay-effect-images
+{
+    max-width: 700px;
+}
+
+.text-images:hover .overlay-effect-images
+{
+    max-width: 700px;
+}
+
+
+.text-images
+{
+    max-width: 700px;
+}
+
+#piet1
+{
+    max-width: 700px;
+}
+
+#piet2
+{
+    max-width: 700px;  
+}
+
+#piet-overlay
+{
+    max-width: 700px;
+}
+
+.text-images:hover #piet-overlay
+{
+    max-width: 700px;
+}
+
+#wesley
+{
+    max-width: 700px;
+}
+
+#osdorp
+{
+    max-width: 700px;
+}
+
+.personeelfoto
+{
+    max-width: 700px;
+}
+.personeelfoto img
+{
+    max-width: 700px;
+}
+
+.img-footer
+{
+    max-width: 700px;
+}
+
+/* Metadam Logo */
+.metadamlogo
+{
+    max-width: 700px;
+}
+
+/* Footer */
+.footer-intradrek-ref
+{
+    max-width: 700px;
+}
+
+.footer-intradrek
+{
+    max-width: 700px;
+}
+
+.footer-intradrek:hover
+{
+    max-width: 700px;
+    
+}
+
+/* Navbar */
+.navbar 
+{
+    max-width: 700px;
+}
+
+.navbar ul 
+{
+    max-width: 700px;
+}
+
+.navbar ul li
+{
+    max-width: 700px;
+}
+
+.navbar ul li a 
+{
+    max-width: 700px;
+}
+
+.navbar ul li a:hover
+{
+    max-width: 700px;
+}
+
+/* Homebutton */
+.homebutton
+{
+    max-width: 700px; 
+}
+
+.homebutton a
+{
+    max-width: 700px;
+}
+
+.homebutton:hover
+{
+    max-width: 700px;
+}
+
+/* Dashboard buttons */
+.panel
+{
+    max-width: 700px;
+}
+
+.overlay-effect
+{
+    max-width: 700px;
+}
+
+.sjonnieknop
+{
+    max-width: 700px;
+}
+
+.sjonnieknop a
+{
+    max-width: 700px;
+}
+
+.sjonnieknop:hover .overlay-effect
+{
+    max-width: 700px;
+}
+
+.sjonnieknop:active
+{
+    max-width: 700px;
+}
+
+.watdoenwij
+{
+    max-width: 700px;
+}
+
+.watdoenwij a
+{
+    max-width: 700px;
+}
+
+.watdoenwij:hover .overlay-effect
+{
+    max-width: 700px;
+}
+
+.watdoenwij:active
+{
+    max-width: 700px;
+}
+
+.wiezijnwij
+{
+    max-width: 700px;
+}
+
+.wiezijnwij a
+{
+    max-width: 700px;
+}
+
+.wiezijnwij:hover .overlay-effect
+{
+    max-width: 700px;
+}
+
+.wiezijnwij:active
+{
+    max-width: 700px;
+}
+
+.freddieknop
+{
+    max-width: 700px;
+}
+
+.freddieknop:active
+{
+    max-width: 700px;
+}
+
+.freddieknop a
+{
+    max-width: 700px;
+}
+
+.freddieknop:hover .overlay-effect
+{
+    max-width: 700px;
+}
+
+.wesleyknop
+{
+    max-width: 700px;
+}
+
+.wesleyknop a
+{
+    max-width: 700px;
+}
+
+.wesleyknop:hover .overlay-effect
+{
+    max-width: 700px;
+}
+
+.wesleyknop:active
+{
+    max-width: 700px; 
+}
+
+.bedrijf
+{
+    max-width: 700px;
+}
+
+.bedrijf a
+{
+    max-width: 700px;
+}
+
+.bedrijf:hover .overlay-effect
+{
+    max-width: 700px;
+}
+
+.bedrijf:active
+{
+    max-width: 700px;
+}
+
+.contact
+{
+    max-width: 700px;
+}
+
+.contact a
+{
+    max-width: 700px;
+}
+
+.contact:hover .overlay-effect
+{
+    max-width: 700px;
+}
+
+.contact:active
+{
+    max-width: 700px; 
+}
+
+.emptyred
+{
+    max-width: 700px;
+}

@@ -1,0 +1,33 @@
+<html lang="nl">
+    <head>
+        <meta hhtp-equiv="Content-Type" content="text/html";
+        charset="UTF-8">
+        <title>Lab 14</title>
+        <script src="mijnfunctions.js"></script>
+    </head>
+
+    <body>
+        <script>
+        alfa = ['a', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+        woord = new Array()    
+
+        for (i = 0; i < 5; i++)
+        {
+            random = Math.floor(Math.random() * 26)
+
+            for (r = 0; r <= 26; r++)
+            {
+                if (r == random)
+                {
+                woord.push(alfa[r])
+                }
+
+            }
+            
+            
+        }
+
+        document.write(woord.join(""))
+        </script>
+    </body>
+</html>

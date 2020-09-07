@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta http-equiv="Content-Type"
+                     content="text/html;
+                     charset=UTF-8">
+    <title>Lab 05</title>
+</head>
+<body>
+    <script>
+        //variabelen voor de tijd van de aangegeven input, de huidige dag en de hoeveelheid miliseconden in een dag
+        var einddatum = prompt('Wat is de einddatum JJJJ-MM-DD?');
+        var deadline = new Date(einddatum);
+        var nu = Date.now();
+        var dag = 86400000;
+
+        document.write("De deadline is: " + deadline);
+
+        //berekening voor de resterende tijd tussen nu en de einddatum
+        resterende = ((deadline - nu) / dag);
+        
+        document.write("<br> Er zijn nog: " + resterende.toFixed(0) + " dagen te gaan!");    
+
+    </script>
+</body>
+</html>

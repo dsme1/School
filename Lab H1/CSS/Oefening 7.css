@@ -1,0 +1,63 @@
+/* Stijlen voor Oefening 8 */ 
+
+
+#div1 { 
+
+	box-shadow: 1px 1px 1px 1px; 
+	border-color: black; 
+	background-color: white; 
+	width: 20%;
+	text-align: left; 
+	height: auto; 
+	} 
+	
+#div2 { 
+	
+	box-shadow: 1px 1px 1px 1px; 
+	background-color: #000; 
+	font: rgb(100%, 100%, 100%); 
+	width: 20%;
+	height: auto; 
+	text-align: left; 
+	color: white; 
+    } 
+
+#div3 { 
+	box-shadow: 1px 1px 1px 1px; 
+	background-color: #f00; 
+	font: rgb(100%, 100%, 100%); 
+	width: 20%;
+	height: auto; 
+	text-align: left; 
+	color: white;
+    }
+
+#div4 { 
+	box-shadow: 1px 1px 1px 1px; 
+	background-color: #0f0; 
+	font: rgb(100%, 100%, 100%); 
+	width: 20%;
+	height: auto; 
+	text-align: left; 
+	color: white; 
+    }
+
+#div5 { 
+	box-shadow: 1px 1px 1px 1px; 
+	background-color: #00f; 
+	font: rgb(100%, 100%, 100%); 
+	width: 20%;
+	height: auto; 
+	text-align: left; 
+	color: white; 
+    }
+    
+#div6 { 
+	box-shadow: 1px 1px 1px 1px; 
+	background-color: #fff; 
+	font: rgb(100%, 100%, 100%); 
+	width: 20%;
+	height: auto; 
+	text-align: left; 
+	color: black; 
+    }

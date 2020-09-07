@@ -1,0 +1,3 @@
+DB is posts is 1 row met data. De site zet dus alles in dezelfde kolom wat ervoor zorgt dat maar 1 post gelinkt kan zijn met 1 topic. Dit komt omdat de posts dus wezenlijk in elkaar zitten in de SQL database.
+Nog gekker is dat het lijkt alsof er twee verschllende arrays in de DB zitten met dezelfde values die toch net anders zijn bij post_id. Hetzelfde geld bij topic_id.
+Dit komt vanwege de table relations van post_topic. Hoe ik dit kan veranderen weet ik nog niet.

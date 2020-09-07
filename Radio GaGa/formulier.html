@@ -1,0 +1,96 @@
+<!-- website RadioGaGa -->
+<!DOCTYPE html>
+<html lang="nl">
+    
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link rel="stylesheet" href="CSS/responsive.css">
+        <meta name="robots" content="all">
+        <meta name="language" content="dutch">
+        <meta name="author" content="Daan Smets">
+        <meta name="description" content="RadioGaGa marketing">
+        <meta name="keywords" content="RadioGaga, muziek, playlist">
+        <meta name="copyright" content="copyright">
+        <title>RadioGaGa</title>
+    </head>
+    
+    <body>
+        
+        <nav>
+            
+            <div id="navigatie">
+                <h3><ul>
+                    <li class="navbar"><a href="index.html">Home</a></li>
+                    <li class="navbar"> <a href="playlist.html">Playlist</a></li>
+                    <li class="navbar"><a href="formulier.html">Formulier</a></li>
+                    <li class="navbar"><a href="contact.html">Contact</a></li>
+                </ul></h3>
+            </div>
+            
+        </nav>
+        
+            <div id="logo">
+            </div> 
+    
+        <main>
+                   
+            <form name="formulier" action="mailto: postmaster@radiogaga.com" method="post">
+                <fieldset>
+                    <legend>Bestel gratis kaarten</legend>
+                        <input required type="text" id="naam" name="naam" placeholder="Naam"><br>
+                        <input required type="email" id="email" name="email" placeholder="E-mail"><br>
+                        <input required type="text" id="mobiel" name="mobiel" placeholder="Mobiel"><br>
+                        <input required type="text" id="woonplaats" name="woonplaats" placeholder="Woonplaats" list="steden">
+                            <datalist id="steden">
+                                <option value="Amsterdam">
+                                <option value="Utrecht">
+                                <option value="Antwerpen">
+                                <option value="Apeldoorn">
+                                <option value="Brussel">
+                                <option value="Rotterdam">
+                            </datalist><br>
+                        <select required naam="concerten" id="concerten">
+                            <option value="0">Kies een concert</option>
+                            <option value="Manu Chao">Manu Chao</option>
+                            <option value="Evanescence">Evanescence</option>
+                            <option value="Sade">Sade</option>
+                        </select><br>
+                        <label for="datum">Geboortedatum: </label><br>
+                        <input required type="date" name="datum" id="datum"><br>
+                        <label for="geslacht">Geslacht: </label>
+                            Man <input type="radio" name="geslacht" value="M">
+                            Vrouw <input type="radio" name="geslacht" value="V"><br>
+                        <textarea placeholder="Schrijf een commentaar..."></textarea><br>
+                        <label for="abonnementen">Gratis abonnementen:</label><br>
+                        Nieuwsbrief:
+                        <input type="checkbox" name="nieuwsbrief" id="nieuwsbrief" value="nieuwsbrief"><br>
+                        Concertagenda:
+                        <input type="checkbox" name="agenda" id="agenda" value="agenda"><br>
+                        <label for="ranking">Album Ranking</label>
+                        <input type="range" name="ranking" id="ranking" min="1" max="5">
+                </fieldset>
+                <input type="submit" id="verzend" name="verzend" value="Verzend">
+            </form>
+            
+            <div id="pager">
+                <div id="vorige">
+                    <a href="playlist.html"> &lt;</a>
+                </div>
+                <div id="volgende">
+                    <a href="contact.html"> &gt; </a>
+                </div>
+            </div>
+            
+        </main>
+        
+        <footer>
+            <a href="#top"><img src="Images/twitter.png" alt="x"></a>
+            <a href="#top"><img src="Images/youtube.png" alt="x"></a>
+            <a href="#top"><img src="Images/facebook.png" alt="x"></a>
+            <p>Copyright &copy; 2017 <i>Ontworpen door: Daan Smets</i> Alle rechten voorbehouden.</p>
+        </footer>
+        
+    </body>
+    
+</html>

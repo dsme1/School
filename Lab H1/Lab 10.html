@@ -1,0 +1,58 @@
+<!-- Labs Opdrachten -->
+<!DOCTYPE html>
+<html lang="nl">
+
+    <head>
+        <link rel="stylesheet" href="CSS/Lab%2010.css">
+    <meta charset="UTF-8">
+    <title>Lab Opdrachten</title>
+    </head>
+    
+    <body>
+        
+       <form name="formulier" action="" method="post">
+                <fieldset>
+                    <legend>Inschrijfformulier</legend>
+                    
+                    <select required naam="cursus" id="cursus">
+                            <option value="0">Kies een cursus</option>
+                            <option value="nederlands">Nederlands</option>
+                            <option value="engels">Engels</option>
+                            <option value="duits">Duits</option>
+                        </select><br>
+                    
+                    <select required naam="lokatie" id="lokatie">
+                            <option value="0">Kies een lokatie</option>
+                            <option value="amsterdam">Amsterdam</option>
+                            <option value="utrecht">Utrecht</option>
+                            <option value="zwolle">Zwolle</option>
+                        </select><br>
+                    
+                    <label for="datum">Begindatum: </label><br>
+                        <input required type="date" name="datum" id="datum"><br>
+                    
+                    <label for="geslacht">Selecteer opleiding: </label>
+                            BOL <input type="radio" name="opleiding" value="bol">
+                            BBL <input type="radio" name="opleiding" value="bbl"><br>
+                    
+                        <input required type="text" id="voornaam" name="voornaam" placeholder="Voornaam"><br>
+                        <input required type="text" id="achternaam" name="achternaam" placeholder="Achternaam"><br>
+                        <input required type="text" id="adres" name="adres" placeholder="Adres"><br>
+                        <input required type="text" id="woonplaats" name="woonplaats" placeholder="Woonplaats"><br>
+                        <input required type="email" id="email" name="email" placeholder="E-mail"><br>
+                        <input required type="text" id="mobiel" name="mobiel" placeholder="Mobiel"><br>
+              
+                    <label for="voorkeur">Geef je voorkeur aan: </label><br>
+                        <input type="checkbox" name="avondschool" id="avondschool" value="avondschool"> Avondschool<br>
+                        <input type="checkbox" name="weekendschool" id="weekendschool" value="weekendschool"> Weekendschool<br>
+                        <input type="checkbox" name="null" id="null" value="null"> Geen Voorkeur<br>
+                       
+                        <label for="ranking">Wat is je opleidingsniveau</label>
+                        <input type="range" name="ranking" id="ranking" min="1" max="5">
+                    
+                </fieldset>
+                <input type="submit" id="verzend" name="verzend" value="Verzend">
+            </form>
+    </body>
+    
+</html>
