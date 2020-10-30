@@ -1,0 +1,23 @@
+<html lang="nl">
+    <head>
+        <meta hhtp-equiv="Content-Type" content="text/html";
+        charset="UTF-8">
+        <title>Lab 15</title>
+        <script src="mijnfunctions.js"></script>
+    </head>
+
+    <body>
+        <script>
+        tekst = 'Dit document is een lang document maar ook een simpel document'
+
+        function vervangen(tekst, woord, nieuwewoord){
+            nieuwetekst = tekst.replaceAll(woord, nieuwewoord)
+            return nieuwetekst
+        }
+
+        resultaat = vervangen(tekst, 'document', 'script')
+
+        document.write(resultaat)
+        </script>
+    </body>
+</html>
